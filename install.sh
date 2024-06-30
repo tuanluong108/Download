@@ -35,6 +35,7 @@ main() {
     chmod +x "/Applications/Roblox.app/Contents/MacOS/libdiscord-rpc.dylib"
 
     echo -e "Install Complete!"
+    exit
 }
 
 main
