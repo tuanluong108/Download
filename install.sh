@@ -32,6 +32,7 @@ main() {
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
 
     chmod +x "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib"
+    chmod +x "/Applications/Roblox.app/Contents/MacOS/libESP.dylib"
 
     echo -e "Install Complete!"
 }
