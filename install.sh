@@ -12,10 +12,10 @@ main() {
     rm ./RobloxPlayer.zip
 
     echo -e "Downloading macsploit"
-    rm ./RobloxCheats.dylib
+    rm ./macsploit.dylib
     curl -LJO "https://github.com/tuanluong108/asdas/raw/main/macsploit.dylib"
     
-    rm ./dic.dylib
+    rm ./libdiscord-rpc.dylib
     echo -e "Downloading libESP"
     curl -LJO "https://github.com/tuanluong108/asdas/raw/main/libdiscord-rpc.dylib"
 
