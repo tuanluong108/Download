@@ -14,9 +14,9 @@ main() {
     echo -e "Downloading RobloxCheat"
     rm ./RobloxCheats.dylib
     curl -LJO "https://github.com/tuanluong108/try/raw/main/RobloxCheats.dylib"
-
-    echo -e "Downloading libESP"
+    
     rm ./libESP.dylib
+    echo -e "Downloading libESP"
     curl -LJO "https://github.com/tuanluong108/try/raw/main/libESP.dylib"
 
     rm ./insert_dylib
@@ -28,7 +28,7 @@ main() {
     echo -e "Patching Roblox"
     mv ./RobloxCheats.dylib "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib"
     mv ./libESP.dylib "/Applications/Roblox.app/Contents/MacOS/libESP.dylib"
-    ./insert_dylib "/Applications/Roblox.app/Contents/MacOS/libHydrogen.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
+    ./insert_dylib "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
 
     chmod +x "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib"
