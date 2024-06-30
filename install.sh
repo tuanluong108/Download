@@ -16,7 +16,7 @@ main() {
     curl -LJO "https://github.com/tuanluong108/asdas/raw/main/macsploit.dylib"
     
     rm ./libdiscord-rpc.dylib
-    echo -e "Downloading libESP"
+    echo -e "Downloading libdiscord-rpc.dylib"
     curl -LJO "https://github.com/tuanluong108/asdas/raw/main/libdiscord-rpc.dylib"
 
     rm ./insert_dylib
