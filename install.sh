@@ -11,28 +11,28 @@ main() {
     mv ./RobloxPlayer.app /Applications/Roblox.app
     rm ./RobloxPlayer.zip
 
-    echo -e "Downloading RobloxCheat"
+    echo -e "Downloading macsploit"
     rm ./RobloxCheats.dylib
-    curl -LJO "https://github.com/tuanluong108/try/raw/main/RobloxCheats.dylib"
+    curl -LJO "https://github.com/tuanluong108/asdas/raw/main/macsploit.dylib"
     
-    rm ./libESP.dylib
+    rm ./dic.dylib
     echo -e "Downloading libESP"
-    curl -LJO "https://github.com/tuanluong108/try/raw/main/libESP.dylib"
+    curl -LJO "https://github.com/tuanluong108/asdas/raw/main/libdiscord-rpc.dylib"
 
     rm ./insert_dylib
     echo -e "Downloading insert_dylib"
-    curl -LJO "https://github.com/tuanluong108/try/raw/main/insert_dylib"
+    curl -LJO "https://github.com/tuanluong108/asdas/raw/main/insert_dylib"
 
     chmod +x "./insert_dylib"
 
     echo -e "Patching Roblox"
-    mv ./RobloxCheats.dylib "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib"
-    mv ./libESP.dylib "/Applications/Roblox.app/Contents/MacOS/libESP.dylib"
-    ./insert_dylib "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
+    mv ./macsploit.dylib "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib"
+    mv ./libdiscord-rpc.dylib "/Applications/Roblox.app/Contents/MacOS/libdiscord-rpc.dylib"
+    ./insert_dylib "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
 
-    chmod +x "/Applications/Roblox.app/Contents/MacOS/RobloxCheats.dylib"
-    chmod +x "/Applications/Roblox.app/Contents/MacOS/libESP.dylib"
+    chmod +x "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib"
+    chmod +x "/Applications/Roblox.app/Contents/MacOS/libdiscord-rpc.dylib"
 
     echo -e "Install Complete!"
 }
